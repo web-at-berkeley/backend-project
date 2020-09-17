@@ -76,7 +76,7 @@ The Stanfurd student has built a very simple wrapper over 3D Eats' SQL database 
 their SQL database into a NoSQL database. We have no idea why, but hey, we'll work with it.
 The endpoint provided by this student is `https://kcbrjk8zn4.execute-api.us-west-1.amazonaws.com/eat-food-uwu`
 and requires an API key which was already provided to you. The Stanfurd student for some reason
-paginated all the requests and limited the output to 10 entries for each page. You asked the
+paginated all the requests and limited the output to _at most_ 10 entries for each page. You asked the
 Stanfurd student for documentation but they only provided you with these scattered messages:
 
 ```
