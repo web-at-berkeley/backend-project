@@ -10,7 +10,7 @@ To submit your project, please place your submission into a GitHub repo that is 
 will be submitting your code on [Gradescope](https://www.gradescope.com/). If you do not have a 
 Gradescope account, please create one and if you are unable to create one, please email us
 immediately. The Gradescope course code is `9DW2N5`. You will see two different assignments: 
-`Frontend Technical Project` and `Backend Techinical Project`. _Please only submit to Backend
+`Frontend Technical Project` and `Backend Technical Project`. _Please only submit to Backend
 Technical Project._ You can ignore Frontend Technical Project.
 
 This project will release at 8:00 am PDT on Thursday, September 17th, and will run until 8:00 am PDT 
