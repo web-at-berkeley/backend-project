@@ -146,7 +146,7 @@ _untrack this record and begin returning them again in the get request._
 
 There are many details that are left intentionally vague. Though you are very much welcome to
 email us to ask for clarifications, we will most likely tell you to use your best judgement.
-Because of this, we have provided a file called `assmptions.md` where you can type out and
+Because of this, we have provided a file called `assumptions.md` where you can type out and
 voice any assumptions you made throughout this project. We also _highly_ encourage you to
 write out your own documentation to this API and provide us a glimpse of your rationale
 behind every design decision.
