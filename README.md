@@ -75,7 +75,8 @@ you with your implementation:
 The Stanfurd student has built a very simple wrapper over 3D Eats' SQL database and has turned
 their SQL database into a NoSQL database. We have no idea why, but hey, we'll work with it.
 The endpoint provided by this student is `https://kcbrjk8zn4.execute-api.us-west-1.amazonaws.com/eat-food-uwu`
-and requires an API key which was already provided to you. The Stanfurd student for some reason
+and requires an API key which was already provided to you. This student used the industry standard authorization
+header by taking in an `x-api-key` to verify usage. The Stanfurd student also for some reason
 paginated all the requests and limited the output to _at most_ 10 entries for each page. You asked the
 Stanfurd student for documentation but they only provided you with these scattered messages:
 
