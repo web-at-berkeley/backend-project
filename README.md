@@ -75,14 +75,14 @@ you with your implementation:
 The Stanfurd student has built a very simple wrapper over 3D Eats' SQL database and has turned
 their SQL database into a NoSQL database. We have no idea why, but hey, we'll work with it.
 The endpoint provided by this student is `https://kcbrjk8zn4.execute-api.us-west-1.amazonaws.com/eat-food-uwu`
-and requires and API key which was already provided to you. The Stanfurd student for some reason
+and requires an API key which was already provided to you. The Stanfurd student for some reason
 paginated all the requests and limited the output to 10 entries for each page. You asked the
 Stanfurd student for documentation but they only provided you with these scattered messages:
 
 ```
 omg so the api takes in a city parameter and a previous parameter
 
-the previous parameter is so that we can get entries from the next page
+the previous parameter is so that we can get entries for the next page
 
 okay but ngl i have no idea how to change the api so that the previous parameter is optional
 
@@ -94,10 +94,10 @@ the whole thing is gonna crash
 it's really fragile and i dont know how to fix it im gonna cry :((((((
 ``` 
 
-...Lovely. We have no idea what their endpoint will return but we know that there are two
+...Lovely. We have no idea what their endpoint will return, but we know that there are two
 required parameters to get data: `city` and `previous`. While emailing 3D eats we found out
 that 3D eats only wants a list of `ID`'s rather than every exact detail provided by the 
-Stanfurd API. This system seems easy to implement but the next two parts of the API will
+Stanfurd API. This system seems easy to implement at first but the next two parts of the API will
 complicate things:
 
 ### Adding A Recipe (`POST`)
@@ -116,7 +116,8 @@ Sadly, Stanfurd CS (and grammar for that matter) has failed them and we have to 
 upon ourselves to host the data. In addition to queuing data from the endpoint that the Stanfurd
 student provided _we will need to host additional data on our own servers to create a hybrid
 data model_. Whenever a new recipe is posted to our API, _store this new data in a database
-of your choice_ rather than attempting to edit the Stanfurd database.
+of your choice_ rather than attempting to edit the Stanfurd database. _The database schema should
+match the Stanfurd schema_ or at least store the same information.
 
 ### Deleting a Recipe (`DELETE`)
 
@@ -140,3 +141,12 @@ scheme:
 and do not return them in the get request._
 - If a record will be added and the recipe matches a deleted entry in the Stanfurd database,
 _untrack this record and begin returning them again in the get request._
+
+## Assumptions
+
+There are many details that are left intentionally vague. Though you are very much welcome to
+email us to ask for clarifications, we will most likely tell you to use your best judgement.
+Because of this, we have provided a file called `assmptions.md` where you can type out and
+voice any assumptions you made throughout this project. We also _highly_ encourage you to
+write out your own documentation to this API and provide us a glimpse of your rationale
+behind every design decision.
